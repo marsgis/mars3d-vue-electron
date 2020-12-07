@@ -32,3 +32,9 @@ npm run serve-web / cnpm run serve-web
 ```
 npm run build-web / cnpm run build-web
 ```
+
+
+
+ ## 版权说明
+  1. 当前[Mars3D](http://cesium.marsgis.cn)免费版本可以免费无限制使用.
+  2. 如有更高需求或商业应用，请联系购买[火星科技](http://cesium.marsgis.cn)进行SDK授权(去除logo、添加授权信息等)。 

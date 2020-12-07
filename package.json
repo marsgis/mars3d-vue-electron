@@ -13,7 +13,7 @@
     "postuninstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "cesium": "^1.74",
+    "cesium": "^1.76",
     "@turf/turf": "^5.1.6",
     "axios": "^0.19.2",
     "element-ui": "^2.13.1",

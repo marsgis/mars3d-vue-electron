@@ -1,7 +1,7 @@
 {
   "name": "mars3d-vue-electron",
-  "version": "1.0.1",
-  "description": "Mars3D三维地球-CS桌面版程序脚手架，使用Vue-Electron技术栈",
+  "version": "3.0.0",
+  "description": "Mars3D三维地球平台软件,CS桌面版程序脚手架，使用Vue-Electron技术栈",
   "main": "background.js",
   "scripts": {
     "build": "vue-cli-service electron:build",
@@ -13,9 +13,8 @@
     "postuninstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "cesium": "^1.77",
-    "@turf/turf": "^5.1.6",
-    "axios": "^0.21.1",
+    "mars3d": "^3.0.3",
+    "core-js": "^3.8.2",
     "element-ui": "^2.13.1",
     "normalize.css": "^8.0.1",
     "vue": "^2.6.11",
@@ -44,6 +43,24 @@
     "vue-cli-plugin-electron-builder": "^1.4.6",
     "vue-template-compiler": "^2.6.11"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marsgis/mars3d-vue-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marsgis/mars3d-vue-template/issues",
+    "email": "wh@marsgis.cn"
+  },
+  "keywords": [
+    "marsgis",
+    "mars3d",
+    "cesium",
+    "vue",
+    "gis"
+  ],
+  "author": "火星科技",
+  "license": "LGPL",
+  "homepage": "http://mars3d.cn",
   "eslintConfig": {
     "root": true,
     "env": {
@@ -62,18 +79,5 @@
     "> 1%",
     "last 2 versions"
   ],
-  "__npminstall_done": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/marsgis/mars3d-vue-electron.git"
-  },
-  "bugs": {
-    "url": "https://github.com/marsgis/mars3d-vue-electron/issues",
-    "email": "wh@marsgis.cn"
-  },
-  "author": {
-    "name": "火星科技",
-    "url": "http://www.marsgis.cn"
-  },
-  "homepage": "https://github.com/marsgis/mars3d-vue-electron"
+  "__npminstall_done": false
 }

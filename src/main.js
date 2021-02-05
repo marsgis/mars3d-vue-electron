@@ -3,13 +3,15 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-//ÒýÈëelement
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-Vue.use(ElementUI);
+// ElementUI
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
-import 'normalize.css'; 
-import './assets/style/common.less';
+import 'normalize.css'
+import './assets/style/common.less'
+
+Vue.use(ElementUI)
+
 Vue.config.productionTip = false
 
 new Vue({

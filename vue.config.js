@@ -3,13 +3,15 @@
 const webpack = require('webpack')
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const cesiumSource = 'node_modules/cesium/Build/Cesium'
+
+const cesiumSource = 'node_modules/mars3d-cesium/Build/Cesium/'
 
 module.exports = {
   publicPath: './',
   assetsDir: './static',
   productionSourceMap: false,
-  lintOnSave: false, // 是否开启eslint
+  lintOnSave: true, // 是否开启eslint
+  // 它支持webPack-dev-server的所有选项
   devServer: {
     open: true
   },
@@ -43,7 +45,7 @@ module.exports = {
           {
             test: /\.js$/,
             enforce: 'pre',
-            include: path.resolve(__dirname, 'node_modules/cesium/Source'),
+            // include: path.resolve(__dirname, 'node_modules/mars3d-cesium/Source'),
             sideEffects: false,
             use: [
               {
@@ -69,14 +71,14 @@ module.exports = {
               test: /[\\/]node_modules[\\/]/,
               priority: -10,
               chunks: 'all',
-              name (module) {
+              name(module) {
                 const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1]
                 return `npm.${packageName.replace('@', '')}`
               }
             },
             commons: {
               name: 'Cesium',
-              test: /[\\/]node_modules[\\/]cesium/,
+              test: /[\\/]node_modules[\\/]mars3d-cesium[\\/]Build[\\/]Cesium/,
               priority: 10,
               chunks: 'all'
             }

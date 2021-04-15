@@ -10,6 +10,9 @@ import Vue from 'vue'
 import 'mars3d/dist/mars3d.css'
 import * as mars3d from 'mars3d'
 
+// 按需导入插件
+// import 'mars3d-esri'
+
 // 为了方便使用,绑定到原型链，在其他vue文件，直接 this.mars3d 来使用
 Vue.prototype.mars3d = mars3d
 Vue.prototype.Cesium = mars3d.Cesium

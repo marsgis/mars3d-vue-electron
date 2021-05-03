@@ -13,7 +13,10 @@
     "postuninstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "mars3d": "^3.0.21",
+    "mars3d": "^3.0.22",   
+     "mars3d-esri": "^3.0.3",
+    "mars3d-navigation": "^3.0.0",
+
     "core-js": "^3.8.2",
     "element-ui": "^2.13.1",
     "normalize.css": "^8.0.1",

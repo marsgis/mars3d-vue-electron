@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "mars3d": "^3.0.25",   
-    "mars3d-esri": "^3.0.5",
     "mars3d-navigation": "^3.0.1",
 
     "core-js": "^3.8.2",

@@ -13,7 +13,7 @@
     "postuninstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "mars3d": "^3.0.28",    
+    "mars3d": "^3.0.29",    
 
     "core-js": "^3.8.2",
     "element-ui": "^2.13.1",

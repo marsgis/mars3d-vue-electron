@@ -1,7 +1,7 @@
 {
   "name": "mars3d-vue-electron",
   "version": "3.0.2",
-  "description": "Mars3D三维地球平台软件,CS桌面版程序脚手架，使用Vue-Electron技术栈",
+  "description": "Mars3D平台,CS桌面版程序脚手架，使用Vue-Electron技术栈",
   "main": "background.js",
   "scripts": {
     "build": "vue-cli-service electron:build",
